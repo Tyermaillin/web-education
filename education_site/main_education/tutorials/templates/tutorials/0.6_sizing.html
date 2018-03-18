@@ -1,0 +1,111 @@
+{% extends "tutorials/base.html" %}
+
+
+{%block text_block %}
+
+<div class="col-lg-8">
+
+
+  {# |_____WIDTH CLASSES_____| #}
+<section id ="sizing_01" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#sizing_01">WIDTH CLASSES</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+  <div class="bg-success p-3 w-25">Width 25%</div>
+  <div class="bg-success p-3 w-50">Width 50%</div>
+  <div class="bg-success p-3 w-75">Width 75%</div>
+  <div class="bg-success p-3 w-100">Width 100%</div>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;div class=&quot;bg-success p-3 w-25&quot;&gt;Width 25%&lt;/div&gt;
+&lt;div class=&quot;bg-success p-3 w-50&quot;&gt;Width 50%&lt;/div&gt;
+&lt;div class=&quot;bg-success p-3 w-75&quot;&gt;Width 75%&lt;/div&gt;
+&lt;div class=&quot;bg-success p-3 w-100&quot;&gt;Width 100%&lt;/div&gt;</code>
+</pre>
+
+</section>
+
+
+{# |_____HEIGHT CLASSES_____| #}
+<section id ="sizing_02" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#sizing_02">HEIGHT CLASSES</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+  <div style="height:300px;border:1px solid #333;">
+      <div class="bg-primary d-inline-block h-25">Height 25%</div>
+      <div class="bg-primary d-inline-block h-50">Height 50%</div>
+      <div class="bg-primary d-inline-block h-75">Height 75%</div>
+      <div class="bg-primary d-inline-block h-100">Height 100%</div>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;div style=&quot;height:300px;border:1px solid #333;&quot;&gt;
+    &lt;div class=&quot;bg-primary d-inline-block h-25&quot;&gt;Height 25%&lt;/div&gt;
+    &lt;div class=&quot;bg-primary d-inline-block h-50&quot;&gt;Height 50%&lt;/div&gt;
+    &lt;div class=&quot;bg-primary d-inline-block h-75&quot;&gt;Height 75%&lt;/div&gt;
+    &lt;div class=&quot;bg-primary d-inline-block h-100&quot;&gt;Height 100%&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+
+</section>
+
+
+{# |_____BORDERS_____| #}
+<section id ="sizing_03" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+<a class="list-group ml-3 text-white" href="#sizing_03">Borders</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+<div class="p-3 mb-2 bg-light border">Regular</div>
+<div class="p-3 mb-2 bg-light border border-primary rounded">Primary</div>
+<div class="p-3 mb-2 bg-light border border-secondary rounded-top">Secondary</div>
+<div class="p-3 mb-2 bg-light border border-success border-bottom-0">Success</div>
+<div class="p-3 mb-2 bg-light border border-info">Info</div>
+<div class="p-3 mb-2 bg-light border border-warning">Warning</div>
+<div class="p-3 mb-2 bg-light border border-danger">Danger</div>
+<div class="p-3 mb-2 bg-light border border-light">Light</div>
+<div class="p-3 mb-2 bg-light border border-dark">Dark</div>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;div class=&quot;p-3 mb-2 bg-light border&quot;&gt;Regular&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-primary rounded&quot;&gt;Primary&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-secondary rounded-top&quot;&gt;Secondary&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-success border-bottom-0&quot;&gt;Success&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-info&quot;&gt;Info&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-warning&quot;&gt;Warning&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-danger&quot;&gt;Danger&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-light&quot;&gt;Light&lt;/div&gt;
+&lt;div class=&quot;p-3 mb-2 bg-light border border-dark&quot;&gt;Dark&lt;/div&gt;</code>
+</pre>
+
+</section>
+
+</div>
+
+
+
+
+{% endblock %}

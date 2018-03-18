@@ -1,0 +1,200 @@
+{% extends "tutorials/base.html" %}
+
+
+{%block text_block %}
+
+<div class="col-lg-8">
+
+  {# |_____FIXED STICKY_____| #}
+  <section id ="fp_01" class='section_edit'>
+
+
+  <!-- Title -->
+  <div class="title_settings py-4 mb-5">
+    <a class="list-group ml-3 text-white" href="#fp_01">Fixed Sticky</a>
+  </div>
+
+  <!-- Detail Code -->
+    <h3 class="sticky-top text-center">Sticky</h3>
+
+  <!-- HTML Code -->
+<pre class="language-markup mt-5">
+<code>&lt;h3 class=&quot;sticky-top text-center&quot;&gt;Sticky&lt;/h3&gt;</code>
+</pre>
+
+  </section>
+
+
+
+
+{# |_____FLOATS_____| #}
+  <section id ="fp_02" class='section_edit'>
+
+
+  <!-- Title -->
+  <div class="title_settings py-4">
+    <a class="list-group ml-3 text-white" href="#fp_02">Floats</a>
+  </div>
+
+  <!-- Detail Code -->
+  <div class="bg-light text-color-info p-3">
+    <div class="float-left">Float left</div><br>
+    <div class="float-right">Float right</div><br>
+    <div class="float-none">Float none</div><br>
+  </div>
+
+  <!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;div class=&quot;bg-light text-color-info p-3&quot;&gt;
+  &lt;div class=&quot;float-left&quot;&gt;Float left&lt;/div&gt;&lt;br&gt;
+  &lt;div class=&quot;float-right&quot;&gt;Float right&lt;/div&gt;&lt;br&gt;
+  &lt;div class=&quot;float-none&quot;&gt;Float none&lt;/div&gt;&lt;br&gt;
+&lt;/div&gt;</code>
+</pre>
+
+  </section>
+
+
+
+
+
+
+
+{# |_____RESPONSIVE FLOATS_____| #}
+<section id ="fp_03" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#fp_03">Responsive Floats</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+  <div class="float-sm-right">Float right on small or wider</div><br>
+  <div class="float-md-right">Float right on medium or wider</div><br>
+  <div class="float-lg-right">Float right on large or wider</div><br>
+  <div class="float-xl-right">Float right on extra large or wider</div><br>
+
+  <div class="float-sm-left">Float left on small or wider</div><br>
+  <div class="float-md-left">Float left on medium or wider</div><br>
+  <div class="float-lg-left">Float left on large or wider</div><br>
+  <div class="float-xl-left">Float left on extra large or wider</div><br>
+
+  <div class="float-sm-none">Float none on small or wider</div><br>
+  <div class="float-md-none">Float none on medium or wider</div><br>
+  <div class="float-lg-none">Float none on large or wider</div><br>
+  <div class="float-xl-none">Float none on extra large or wider</div><br>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;div class=&quot;float-sm-right&quot;&gt;Float right on small or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-md-right&quot;&gt;Float right on medium or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-lg-right&quot;&gt;Float right on large or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-xl-right&quot;&gt;Float right on extra large or wider&lt;/div&gt;&lt;br&gt;
+
+&lt;div class=&quot;float-sm-left&quot;&gt;Float left on small or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-md-left&quot;&gt;Float left on medium or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-lg-left&quot;&gt;Float left on large or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-xl-left&quot;&gt;Float left on extra large or wider&lt;/div&gt;&lt;br&gt;
+
+&lt;div class=&quot;float-sm-none&quot;&gt;Float none on small or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-md-none&quot;&gt;Float none on medium or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-lg-none&quot;&gt;Float none on large or wider&lt;/div&gt;&lt;br&gt;
+&lt;div class=&quot;float-xl-none&quot;&gt;Float none on extra large or wider&lt;/div&gt;&lt;br&gt;</code>
+</pre>
+
+</section>
+
+
+
+
+
+
+{# |_____CLEARFIX_____| #}
+<section id ="fp_04" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#fp_04">Clearfix</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+  <div class="bg-success clearfix">
+      <button class="float-left">Float Left</button>
+      <button class="float-right">Float Right</button>
+  </div>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;div class=&quot;bg-success clearfix&quot;&gt;
+    &lt;button class=&quot;float-left&quot;&gt;Float Left&lt;/button&gt;
+    &lt;button class=&quot;float-right&quot;&gt;Float Right&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+
+</section>
+
+
+
+
+
+
+{# |_____FIXED TOP _____| #}
+<section id ="fp_05" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#fp_05">Fixed Top</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+<h3 class="fixed-top">Fixed Top</h3>
+<h2>No data to display in this box, "Fixed TOP" is on the bottom-left!</h2>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;h3 class=&quot;fixed-top&quot;&gt;Fixed Top&lt;/h3</code>
+</pre>
+
+</section>
+
+
+
+{# |_____FIXED BOTTOM _____| #}
+
+<section id ="fp_06" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#fp_06">Fixed Bottom</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+<h3 class="fixed-bottom">Fixed Bottom</h3>
+<h2>No data to display in this box, "Fixed Bottom" is on the top-left!</h2>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;h3 class=&quot;fixed-bottom&quot;&gt;Fixed Bottom&lt;/h3&gt;</code>
+</pre>
+
+</section>
+
+
+</div>
+
+
+
+
+{% endblock %}

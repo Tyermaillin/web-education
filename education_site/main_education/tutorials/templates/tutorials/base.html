@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Base{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "tutorials/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "tutorials/css/styles.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "tutorials/css/prism.css" %}">
+    {% block block_style %} {% endblock %}
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body>
+
+{# |_____NAVBAR_____| #}
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand ml-4" href="{% url 'index_page' %}"><i class="fab fa-leanpub"></i> Belethor</a>
+
+    <button class="navbar-toggler" type="button" name="button" data-toggle="collapse" data-target="#main_nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="main_nav">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="#">HTML</a>
+        <a class="nav-item nav-link" href="#">CSS</a>
+        <a class="nav-item nav-link" href="#">Bootstrap</a>
+      </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid mt-3" style="margin-bottom:200px;">
+      <div class="row">
+
+
+        <div class="col-lg-2 d-none d-sm-block">
+          <div class="list-group">
+              <h4 class="list-group-item ht01"><i class="fab fa-html5"></i> Basic HTML</h4>
+
+            <div class="">
+              <a class="list-group-item list-group-item-action" href="{% url "tutorials:html_part_01" %}">Basic HTML Partea I</a>
+              <a class="list-group-item list-group-item-action" href="#">Basic HTML Partea II</a></li>
+            </div>
+          </div>
+
+          <div class="list-group mt-2">
+            <h4 class="list-group-item ht02"><i class="fab fa-css3-alt"></i> Basic CSS</h4>
+            <div class="">
+              <a class="list-group-item list-group-item-action" href="#">Basic CSS Part I</a>
+
+
+              <a class="list-group-item list-group-item-action" href="#">Basic CSS Partea II</a>
+            </div>
+
+          </div>
+
+          <div class="list-group mt-2">
+            <h4 class="list-group-item ht03"><i class="fas fa-bold"></i> Basic Bootstrap</h4>
+              <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="collapse" href="#utilities">Utilities</a>
+              <div id="utilities" class="collapse text-center">
+                <a class="list-group-item" href="{% url "tutorials:basic_typography" %}">Basic Typography</a>
+                <a class="list-group-item" href="{% url "tutorials:text_alignment_display" %}">Text Alignment & Display</a>
+                <a class="list-group-item" href="{% url "tutorials:floats_position" %}">Floats & Position</a>
+                <a class="list-group-item" href="{% url "tutorials:colors_background" %}">Colors & Background</a>
+                <a class="list-group-item" href="{% url "tutorials:spacing" %}">Spacing</a>
+                <a class="list-group-item" href="{% url "tutorials:sizing" %}">Sizing</a>
+                <a class="list-group-item" href="{% url "tutorials:breakpoints" %}">Breakpoints</a>
+              </div>
+
+              <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="collapse" href="#css_components">CSS Components</a>
+              <div id="css_components" class="collapse text-center">
+                <a class="list-group-item" href="{% url "tutorials:buttons" %}">Buttons</a>
+                <a class="list-group-item" href="{% url "tutorials:navbar" %}">Navbar</a>
+                <a class="list-group-item" href="{% url "tutorials:list_group_badges" %}">List Groups & Badges</a>
+                <a class="list-group-item" href="{% url "tutorials:forms" %}">Forms</a>
+                <a class="list-group-item" href="{% url "tutorials:input_groups" %}">Input Groups</a>
+                <a class="list-group-item" href="{% url "tutorials:alerts_progress" %}">Alerts & Progress</a>
+                <a class="list-group-item" href="{% url "tutorials:tables_pagination" %}">Tables & Pagination</a>
+                <a class="list-group-item" href="{% url "tutorials:cards" %}">Cards</a>
+                <a class="list-group-item" href="{% url "tutorials:media_objects" %}">Media Objects</a>
+              </div>
+
+
+              <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="collapse" href="#grid_flex">Grid and Flex</a>
+              <div id="grid_flex" class="collapse text-center">
+                <a class="list-group-item" href="#">Grid System</a>
+                <a class="list-group-item" href="#">Grid Alignment</a>
+                <a class="list-group-item" href="#">Flexbox</a>
+                <a class="list-group-item" href="#">Auto Margins & Wrap</a>
+              </div>
+
+
+              <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="collapse" href="#js_widgets">JS Widgets</a>
+              <div id="js_widgets" class="collapse text-center">
+                <a class="list-group-item" href="#">Carousel</a>
+                <a class="list-group-item" href="#">Collapse</a>
+                <a class="list-group-item" href="#">Tooltips</a>
+                <a class="list-group-item" href="#">Popovers</a>
+                <a class="list-group-item" href="#">Modals</a>
+              </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- <div class="col-lg-10 col-xl-8"> -->
+          {% block text_block %}
+
+          {% endblock %}
+        <!-- </div> -->
+
+        <!-- <div class="col-lg-2 ml-auto d-none d-xl-block"> -->
+          {% block right %}
+
+          {% endblock %}
+
+
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <footer class="mt-5 py-4 bg-dark text-center footer-margin">
+      <div class="container">
+        <h4>&copy; 2018</h4>
+      </div>
+
+
+    </footer>
+
+
+    <script src="{% static "tutorials/js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "tutorials/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "tutorials/js/prism.js" %}"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+{% extends "tutorials/base.html" %}
+
+
+{%block text_block %}
+
+<div class="col-lg-8">
+  {# |_____TEXT COLORS_____| #}
+  <section id ="cb_01" class='section_edit'>
+
+
+  <!-- Title -->
+  <div class="title_settings py-4">
+    <a class="list-group ml-3 text-white" href="#cb_01">Text Colors</a>
+  </div>
+
+  <!-- Detail Code -->
+  <div class="bg-light text-color-info p-3">
+    <p class="text-primary">Text Primary Color</p>
+    <p class="text-secondary">Text Secondary Color</p>
+    <p class="text-success">Text Success Color</p>
+    <p class="text-info">Text Info Color</p>
+    <p class="text-warning">Text Warning Color</p>
+    <p class="text-danger">Text Danger Color</p>
+    <p class="bg-dark text-light">Text Light Color</p>
+    <p class="text-dark">Text Dark Color</p>
+  </div>
+
+  <!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;p class=&quot;text-primary&quot;&gt;Text Primary Color&lt;/p&gt;
+&lt;p class=&quot;text-secondary&quot;&gt;Text Secondary Color&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;Text Success Color&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;Text Info Color&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;Text Warning Color&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;Text Danger Color&lt;/p&gt;
+&lt;p class=&quot;text-light&quot;&gt;Text Light Color&lt;/p&gt;
+&lt;p class=&quot;text-dark&quot;&gt;Text Dark Color&lt;/p&gt;</code>
+</pre>
+
+  </section>
+
+
+  {# |_____BACKGROUND COLORS_____| #}
+<section id ="bt_02" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_02">Background Colors</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+  <div class="bg-primary text-white">Background Primary Color</div>
+  <div class="bg-secondary">Background Secondary Color</div>
+  <div class="bg-success text-white">Background Success Color</div>
+  <div class="bg-info text-white">Background Info Color</div>
+  <div class="bg-warning">Background Warning Color</div>
+  <div class="bg-danger text-white">Background Danger Color</div>
+  <div class="bg-light">Background Light Color</div>
+  <div class="bg-dark text-light">Background Dark Color</div>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;div class=&quot;bg-primary text-white&quot;&gt;Background Primary Color&lt;/div&gt;
+&lt;div class=&quot;bg-secondary&quot;&gt;Background Secondary Color&lt;/div&gt;
+&lt;div class=&quot;bg-success text-white&quot;&gt;Background Success Color&lt;/div&gt;
+&lt;div class=&quot;bg-info text-white&quot;&gt;Background Info Color&lt;/div&gt;
+&lt;div class=&quot;bg-warning&quot;&gt;Background Warning Color&lt;/div&gt;
+&lt;div class=&quot;bg-danger text-white&quot;&gt;Background Danger Color&lt;/div&gt;
+&lt;div class=&quot;bg-light&quot;&gt;Background Light Color&lt;/div&gt;
+&lt;div class=&quot;bg-dark text-light&quot;&gt;Background Dark Color&lt;/div&gt;</code>
+</pre>
+
+</section>
+
+
+{# |_____INVISIBLE_____| #}
+<section id ="bt_03" class='section_edit'>
+
+
+<!-- Title -->
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_03">Invisible</a>
+</div>
+
+<!-- Detail Code -->
+<div class="bg-light text-color-info p-3">
+<p class="invisible">Hello</p>
+</div>
+
+<!-- HTML Code -->
+<pre class="language-markup">
+<code>&lt;p class=&quot;invisible&quot;&gt;Hello&lt;/p&gt;</code>
+</pre>
+
+</section>
+
+</div>
+
+
+
+
+{% endblock %}

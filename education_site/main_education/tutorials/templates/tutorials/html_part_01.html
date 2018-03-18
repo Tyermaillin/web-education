@@ -1,0 +1,539 @@
+{% extends "tutorials/base.html" %} {% block text_block %}
+<div class="col-lg-8 bg-light p-2">
+
+  <section id="html_part_one">
+
+
+    <div class="l-title">
+      <h2>Heading & Paragraph</h2>
+    </div>
+
+    <p><strong>Heading</strong> in romana <strong>rubrica</strong> poate fi folosit pentru a scrie un text, cu o marime si un aspect diferit.</p>
+    <p>De exemplu, daca am nevoie de un text pentru un titlu de pagina putem folosii &lt;h1&gt;&lt;/h1&gt; tag</p>
+
+    <pre class="language-markup">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Acesta este primul meu text!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code>
+</pre>
+
+
+    <p>Bun, acum ca am scris "codul" in sectiunea body din fisierul HTML, sa il rulam si sa vedem cum arata el in browser</p>
+
+
+    <div class="box-web p-2 mb-5">
+
+      <ul class="list-inline">
+        <li class="list-inline-item"><i class="fas fa-file"></i></li>
+        <li class="list-inline-item">Title Page</li>
+      </ul>
+
+      <ul class="border-box list-inline">
+        <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+        <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+        <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+        <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+      </ul>
+
+      <div class="box-detail-view">
+        <h1>Acesta este un text!</h1>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <p>Se pare ca pare destul de mare, dar cum facem ca acel text sa fie mai mic? Ei bine, daca am folosit &lt;h1&gt;&lt;/h1&gt; pentru acel tip de text, ce se intampla daca folosim &lt;h2&gt;&lt;/h2&gt;
+    </p>
+    <p>Sa incercam sa adaugam "&lt;h2&gt;Yay, un element nou :)&lt;/h2&gt;" sub primul elementul &lt;h1&gt;&lt;/h1&gt;</p>
+
+    <pre class="language-markup">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Acesta este un text!&lt;/h1&gt;
+    &lt;h2&gt;Yay, un element nou :)&lt;/h2&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code>
+</pre>
+
+    <p>Acum ca am facut asta sa vedem cum arata aceasta in browser!</p>
+
+    <div class="box-web p-2 mb-5">
+
+      <ul class="list-inline">
+        <li class="list-inline-item"><i class="fas fa-file"></i></li>
+        <li class="list-inline-item">Title Page</li>
+      </ul>
+
+      <ul class="border-box list-inline">
+        <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+        <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+        <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+        <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+      </ul>
+
+      <div class="box-detail-view">
+        <h1>Acesta este un text!</h1>
+        <h2>Yay, un element nou :)</h2>
+      </div>
+
+    </div>
+
+    <p>Wow, se pare ca al doilea element este mai mic ca primul. Putem folosii taguri fr tip heading de la &lt;h1&gt; pana la &lt;h6&gt;.</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <pre class="language-markup">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Text cu numarul 1&lt;/h1&gt;
+    &lt;h2&gt;Text cu numarul 2&lt;/h2&gt;
+    &lt;h3&gt;Text cu numarul 3&lt;/h3&gt;
+    &lt;h4&gt;Text cu numarul 4&lt;/h4&gt;
+    &lt;h5&gt;Text cu numarul 5&lt;/h5&gt;
+    &lt;h6&gt;Text cu numarul 6&lt;/h6&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code>
+</pre>
+      </div>
+
+
+      <div class="col-md-6">
+
+
+
+        <div class="box-web p-2 mb-5">
+
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-file"></i></li>
+            <li class="list-inline-item">Title Page</li>
+          </ul>
+
+          <ul class="border-box list-inline">
+            <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+            <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+            <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+            <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+          </ul>
+
+          <div class="box-detail-view">
+            <h1>Text cu numarul 1</h1>
+            <h2>Text cu numarul 2</h2>
+            <h3>Text cu numarul 3</h3>
+            <h4>Text cu numarul 4</h4>
+            <h5>Text cu numarul 5</h5>
+            <h6>Text cu numarul 6</h6>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <p>Acum ca am vazut cum se folosete heading tag, poate vrem sa scriem cu un text normal, fara <strong>Bold</strong> sau cu diferite marimi, pentru aceasta putem folosii <em>Paragraph Tag</em></p>
+
+    <pre class="language-markup">
+<code>&lt;p&gt;Eu sunt un paragraf!&lt;/p&gt;</code>
+</pre>
+
+    <div class="box-web p-2 mb-5">
+
+      <ul class="list-inline">
+        <li class="list-inline-item"><i class="fas fa-file"></i></li>
+        <li class="list-inline-item">Title Page</li>
+      </ul>
+
+      <ul class="border-box list-inline">
+        <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+        <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+        <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+        <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+      </ul>
+
+      <div class="box-detail-view">
+        <p>Eu sunt un paragraf!</p>
+      </div>
+
+    </div>
+
+    <p>Este destul de usor, nu-i asa? Sa incercam sa scriem inca doua linii de text</p>
+
+
+    <pre class="language-markup">
+<code>&lt;p&gt;Eu sunt paragraf 1
+      Eu sunt paragraf 2
+      Eu sunt paragraf 3&lt;/p&gt;</code>
+</pre>
+
+    <p>Acum sa il vizionam in browser!</p>
+
+    <div class="box-web p-2 mb-5">
+
+      <ul class="list-inline">
+        <li class="list-inline-item"><i class="fas fa-file"></i></li>
+        <li class="list-inline-item">Title Page</li>
+      </ul>
+
+      <ul class="border-box list-inline">
+        <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+        <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+        <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+        <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+      </ul>
+
+      <div class="box-detail-view">
+        <p>Eu sunt paragraf 1 Eu sunt paragraf 2 Eu sunt paragraf 3</p>
+      </div>
+
+    </div>
+
+
+    <p>Se pare ca fiecare propozitie, chiar daca in text editor sunt pe linii diferite in browser sunt aratate pe un singur rand.</p>
+
+    <p>Pentru a creea noi randuri putem folosii linii multiple de paragraf.</p>
+
+    <div class="row">
+      <div class="col-md-8">
+
+        <pre class="language-markup">
+<code>&lt;p&gt;Linia 1&lt;/p&gt;
+&lt;p&gt;Linia 2&lt;/p&gt;
+&lt;p&gt;Linia 3&lt;/p&gt;</code>
+</pre>
+
+      </div>
+
+
+      <div class="col-md-8">
+
+
+
+        <div class="box-web p-2">
+
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-file"></i></li>
+            <li class="list-inline-item">Title Page</li>
+          </ul>
+
+          <ul class="border-box list-inline">
+            <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+            <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+            <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+            <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+          </ul>
+
+          <div class="box-detail-view">
+            <p>Linia 1</p>
+            <p>Linia 2</p>
+            <p>Linia 3</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p>Tot ce conteaza atunci cand creezi un HTML tag este inceputul si sfarsitul tagului.</p>
+    <p>Deci putem folosii diferite tag-uri de exemplu un paragraf si o rubrica in aceiasi linie in editor.</p>
+
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+<pre class="language-markup">
+<code>&lt;p&gt;Linia 1&lt;/p&gt;&lt;p&gt;Linia 2&lt;/p&gt;&lt;h4&gt;Linia 3&lt;/h4&gt;</code>
+</pre>
+
+      </div>
+
+
+      <div class="col-md-8">
+
+
+
+        <div class="box-web p-2 mb-5">
+
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-file"></i></li>
+            <li class="list-inline-item">Title Page</li>
+          </ul>
+
+          <ul class="border-box list-inline">
+            <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+            <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+            <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+            <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+          </ul>
+
+          <div class="box-detail-view">
+            <p>Linia 1</p>
+            <p>Linia 2</p>
+            <h4>Linia 3</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <p>Se pare ca ele au acelasi efect, precum exemplul aratat anterior.</p>
+
+    <pre class="language-markup">
+<code>&lt;p&gt;Linia 1&lt;/p&gt;
+&lt;p&gt;Linia 2
+      Acesta va fi tot in linia a doua&lt;/p&gt;  &lt;!-- textul se v-a positiona pe linia a doua
+                                                                    nu conteaza cum este aliniat. --&gt;
+&lt;p&gt;Linia 3&lt;/p&gt;</code>
+</pre>
+
+
+    <p>Nota: Heading se poate diferentia de un Paragraph datorita marimii si faptului ca e <strong>bold</strong></p>
+    <br>
+    <h1>Bold Si Italic</h1>
+
+    <p>Pentru acest stil de scriere sunt cunoscute doua metode pentru fiecare, voi prezenta metoda veche si noua.</p>
+
+    <h3 class="mb-3">Metoda veche de scriere pentru <strong>Strong</strong> si <em>Italic</em></h3>
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+<pre class="language-markup">
+<code>&lt;p&gt;&lt;b&gt;Acest text este bold&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Acest text este italic&lt;/i&gt;&lt;/p&gt;</code>
+</pre>
+
+      </div>
+
+
+      <div class="col-md-8">
+
+
+
+        <div class="box-web p-2 mb-2">
+
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-file"></i></li>
+            <li class="list-inline-item">Title Page</li>
+          </ul>
+
+          <ul class="border-box list-inline">
+            <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+            <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+            <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+            <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+          </ul>
+
+          <div class="box-detail-view">
+            <p><b>Acest text este bold</b></p>
+            <p><i>Acest text este italic</i></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p>Cele doua tag-uri <strong>B</strong> si <strong>I</strong>, nu prea sunt in general folosite, de obicei sunt preferate metodele noi.</p>
+
+    <h3 class="mb-3">Metoda noua de scriere pentru <strong>Strong</strong> si <em>Italic</em></h3>
+
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+    <pre class="language-markup">
+    <code>&lt;p&gt;&lt;strong&gt;Acest text este bold&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Acest text este italic&lt;/em&gt;&lt;/p&gt;</code>
+    </pre>
+
+      </div>
+
+
+      <div class="col-md-8">
+
+
+
+        <div class="box-web p-2 mb-2">
+
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-file"></i></li>
+            <li class="list-inline-item">Title Page</li>
+          </ul>
+
+          <ul class="border-box list-inline">
+            <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+            <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+            <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+            <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+          </ul>
+
+          <div class="box-detail-view">
+            <p><strong>Acest text este bold</strong></p>
+            <p><em>Acest text este italic</em></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p>Ambele medote au acelasi efect</p>
+
+
+    <h1>Liste</h1>
+
+    <p>HTML are doua tipuri de liste: </p>
+    <li>Ordonate</li>
+    <li>Neordonate</li>
+
+    <p>Sa incepem cu lista ordonata</p>
+    <p>Acest este definit prin <strong>OL</strong> tag.</p>
+
+<pre class="language-markup">
+<code>&lt;ol&gt;
+
+&lt;/ol&gt;</code>
+</pre>
+
+    <p><strong>OL</strong> (ordored list) reprezinta o lista numerotata.</p>
+    <p>Pentru a creea un obiect(item) pentru o lista este necesar <strong>LI</strong> ce reprezinta un item dintr-o lista.</p>
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+    <pre class="language-markup">
+<code>&lt;ol&gt;
+  &lt;li&gt;Primul obiect&lt;/li&gt;
+  &lt;li&gt;Al Doilea obiect&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre>
+
+      </div>
+
+
+      <div class="col-md-6">
+
+
+
+        <div class="box-web p-2 mb-2">
+
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-file"></i></li>
+            <li class="list-inline-item">Title Page</li>
+          </ul>
+
+          <ul class="border-box list-inline">
+            <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+            <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+            <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+            <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+          </ul>
+
+          <div class="box-detail-view">
+            <ol>
+              <li>Primul obiect</li>
+              <li>Al Doilea obiect</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p>Se pare ca ele chiar sunt numerotate intre ele, dar daca nu avem nevoie de o lista numerotata, putem alege o lista neordonata.</p>
+
+    <p>Pentru a folosi o lista neordonata avem nevoie de <strong>UL</strong> (unordered list) tag.</p>
+
+    <pre class="language-markup">
+<code>&lt;ul&gt;
+  &lt;li&gt;Text 1&lt;/li&gt;
+  &lt;li&gt;Text 2&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+    <p>Poti combina <strong>UL tag</strong> cu <strong>UL tag</strong></p>
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+    <pre class="language-markup">
+<code>&lt;ol&gt;
+   &lt;li&gt;Text 1&lt;/li&gt;
+   &lt;li&gt;Text 2&lt;/li&gt;
+   &lt;ul&gt;
+      &lt;li&gt;Lista neordonata in lista ordonata 1&lt;/li&gt;
+      &lt;li&gt;Lista neordonata in lista ordonata 2&lt;/li&gt;
+      &lt;ul&gt;
+         &lt;li&gt;lel&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/ul&gt;
+&lt;/ol&gt;</code>
+</pre>
+
+      </div>
+
+
+      <div class="col-md-6">
+
+
+
+        <div class="box-web p-2 mb-2">
+
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-file"></i></li>
+            <li class="list-inline-item">Title Page</li>
+          </ul>
+
+          <ul class="border-box list-inline">
+            <li class="list-inline-item"><i class="fas fa-arrow-left"></i></li>
+            <li class="list-inline-item"><i class="fas fa-arrow-right mr-2"></i></li>
+            <li class="list-inline-item"><i class="fas fa-sync-alt mr-2"></i></li>
+            <li class="list-inline-item box-search mb-1 px-2">file:///home/user/Fileroot/index.html</li>
+          </ul>
+
+          <div class="box-detail-view">
+            <ol>
+              <li>Text 1</li>
+              <li>Text 2</li>
+              <ul>
+                <li>Lista neordonata in lista ordonata 1</li>
+                <li>Lista neordonata in lista ordonata 2</li>
+                <ul>
+                  <li>lel</li>
+                </ul>
+              </ul>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <p>Este un exemplu c-am extrem, cel mai probabil nu este folosit prea des, dar am vrut sa demonstrez ca acest lucru este posibil cu listele in HTML.</p>
+
+  </section>
+</div>
+{% endblock %}

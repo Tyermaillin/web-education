@@ -1,0 +1,116 @@
+{% extends "tutorials/base.html" %}
+
+
+{% block block_style%}
+<style>
+    /* Small devices (landscape phones) */
+    @media (min-width:576px) {
+      body{
+        background:red;
+      }
+    }
+
+    /* Medium devices (tablets) */
+    @media (min-width:768px) {
+      body{
+        background:blue;
+      }
+    }
+
+    /* Large devices (desktops) */
+    @media (min-width:992px) {
+      body{
+        background: green;
+      }
+    }
+
+    /* Extra large devices (large desktops) */
+    @media (min-width:1200px) {
+      body{
+        background:yellow;
+      }
+    }
+
+    /* The given screen size or smaller */
+
+    /* Extra small devices (portrait phones)*/
+    @media (max-width:575px) {}
+
+    /* Small devices (landscape phones)*/
+    @media (max-width:767px) {}
+
+    /* Medium devices (tablets)*/
+    @media (max-width:991px) {}
+
+    /* Large devices (desktops)*/
+    @media (max-width:1199px) {}
+</style>
+
+{% endblock %}
+
+{%block text_block %}
+
+<div class="col-lg-8">
+  {# |_____Breakpoints_____| #}
+  <section id ="bt_01" class='section_edit'>
+
+
+  <!-- Title -->
+  <div class="title_settings py-4">
+    <a class="list-group ml-3 text-white" href="#bt_01">Breakpoints CSS or HTML Style</a>
+  </div>
+
+
+  <!-- HTML Code -->
+<pre class="language-css">
+<code>&lt;style&gt;/* Small devices (landscape phones) */
+      @media (min-width:576px) {
+        body{
+          background:red;
+        }
+      }
+
+      /* Medium devices (tablets) */
+      @media (min-width:768px) {
+        body{
+          background:blue;
+        }
+      }
+
+      /* Large devices (desktops) */
+      @media (min-width:992px) {
+        body{
+          background: green;
+        }
+      }
+
+      /* Extra large devices (large desktops) */
+      @media (min-width:1200px) {
+        body{
+          background:yellow;
+        }
+      }
+
+      /* The given screen size or smaller */
+
+      /* Extra small devices (portrait phones)*/
+      @media (max-width:575px) {}
+
+      /* Small devices (landscape phones)*/
+      @media (max-width:767px) {}
+
+      /* Medium devices (tablets)*/
+      @media (max-width:991px) {}
+
+      /* Large devices (desktops)*/
+      @media (max-width:1199px) {}&lt;/style&gt;</code>
+</pre>
+
+  </section>
+
+</div>
+
+
+
+
+{% endblock %}

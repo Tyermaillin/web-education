@@ -1,0 +1,245 @@
+{% extends "tutorials/base.html" %}
+
+
+{%block text_block %}
+
+<div class="col-lg-8">
+
+
+{# |_____Headings_____| #}
+<section id ="bt_01" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_01">Headings / Rubrici</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <h1>Heading One <small class="text-muted">Subtext</small></h1>
+  <h2>Heading Two</h2>
+  <h3>Heading Three</h3>
+  <h4 class="h2">Heading Four</h4>
+  <h5>Heading Five</h5>
+  <h6>Heading Six</h6>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;h1&gt;Heading One &lt;small class=&quot;text-muted&quot;&gt;Subtext&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;Heading Two&lt;/h2&gt;
+&lt;h3&gt;Heading Three&lt;/h3&gt;
+&lt;h4 class=&quot;h2&quot;&gt;Heading Four&lt;/h4&gt;
+&lt;h5&gt;Heading Five&lt;/h5&gt;
+&lt;h6&gt;Heading Six&lt;/h6&gt;</code>
+</pre>
+
+</section>
+
+{# |_____Display Classes_____| #}
+<section id ="bt_02" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_02">Display Classes</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+  <h1 class="display-4">Display 5</h1>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;h1 class=&quot;display-1&quot;&gt;Display 1&lt;/h1&gt;
+&lt;h1 class=&quot;display-2&quot;&gt;Display 2&lt;/h1&gt;
+&lt;h1 class=&quot;display-3&quot;&gt;Display 3&lt;/h1&gt;
+&lt;h1 class=&quot;display-4&quot;&gt;Display 4&lt;/h1&gt;
+&lt;h1 class=&quot;display-4&quot;&gt;Display 5&lt;/h1&gt;</code>
+</pre>
+
+</section>
+
+{# |_____Lead_____| #}
+<section id ="bt_03" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_03">Lead</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;</code>
+</pre>
+
+</section>
+
+{# |_____Style Classes_____| #}
+<section id ="bt_04" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_04">Style Classes</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <p class="font-weight-bold">Bold Text</p>
+  <p class="font-weight-normal">Normal Text</p>
+  <p class="font-italic">Italic Text</p>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;p class=&quot;font-weight-bold&quot;&gt;Bold Text&lt;/p&gt;
+&lt;p class=&quot;font-weight-normal&quot;&gt;Normal Text&lt;/p&gt;
+&lt;p class=&quot;font-italic&quot;&gt;Italic Text&lt;/p&gt;</code>
+</pre>
+
+</section>
+
+
+{# |_____Text Transforms_____| #}
+<section id ="bt_05" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_05">Text Transforms</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <p class="text-lowercase">MAKE LOWERCASE</p>
+  <p class="text-uppercase">make uppercase</p>
+  <p class="text-capitalize">make capitalized</p>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;p class=&quot;text-lowercase&quot;&gt;MAKE LOWERCASE&lt;/p&gt;
+&lt;p class=&quot;text-uppercase&quot;&gt;make uppercase&lt;/p&gt;
+&lt;p class=&quot;text-capitalize&quot;&gt;make capitalized&lt;/p&gt;</code>
+</pre>
+
+</section>
+
+
+{# |_____Blockquotes_____| #}
+<section id ="bt_06" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_06">Blockquotes</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <!-- BLOCKQUOTES -->
+  <blockquote class="blockquote">
+    <p>This is a blockquote</p>
+  </blockquote>
+  <br>
+  <!-- BLOCKQUOTE RIGHT ALIGNED -->
+  <blockquote class="blockquote text-right">
+    <p>This is a blockquote aligned right</p>
+  </blockquote>
+  <br>
+  <!-- BLOCKQUOTE WITH FOOTER -->
+  <blockquote class="blockquote text-right">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  </blockquote>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;!-- BLOCKQUOTES --&gt;
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  &lt;p&gt;This is a blockquote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- BLOCKQUOTE RIGHT ALIGNED --&gt;
+&lt;blockquote class=&quot;blockquote text-right&quot;&gt;
+  &lt;p&gt;This is a blockquote aligned right&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- BLOCKQUOTE WITH FOOTER --&gt;
+&lt;blockquote class=&quot;blockquote text-right&quot;&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;footer class=&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;</code>
+</pre>
+
+</section>
+
+
+{# |_____Lists_____| #}
+<section id ="bt_07" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_07">Lists</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <ul class="list-unstyled">
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+  </ul>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+</section>
+
+
+{# |_____Inline List_____| #}
+<section id ="bt_08" class="mb-4">
+
+<div class="title_settings py-4">
+  <a class="list-group ml-3 text-white" href="#bt_08">Inline List</a>
+</div>
+
+
+<div class="bg-light text-color-info p-3">
+  <ul class="list-inline">
+    <li class="list-inline-item">Lorem ipsum</li>
+    <li class="list-inline-item">Lorem ipsum </li>
+    <li class="list-inline-item">Lorem ipsum </li>
+  </ul>
+</div>
+
+
+<pre class="language-markup">
+<code>&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li class=&quot;list-inline-item&quot;&gt;Lorem ipsum&lt;/li&gt;
+  &lt;li class=&quot;list-inline-item&quot;&gt;Lorem ipsum &lt;/li&gt;
+  &lt;li class=&quot;list-inline-item&quot;&gt;Lorem ipsum &lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+
+</section>
+
+
+</div>
+
+{% endblock %}
+
+
+  {% block right %}
+
+  {% endblock %}
